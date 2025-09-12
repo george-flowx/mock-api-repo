@@ -1,14 +1,26 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
+  "application": {
+    "memoryDocuments": [
+      {
+        "documentId": 1,
+        "documentName": "Market Intelligence Caen 4618",
+        "currentVersionId": 3,
+        "date": "05.09.2025",
+        "source": "FlowX",
+        "status": "Validated",
+        "file": "pdf",
+        "documentURL": "https://admin-86.demo.flowx.ai/api/media-library/files/d7e6a2e9-b98b-432b-a388-6663fa667c66/caen4618/1757563200031_Market Intelligence Report_ Romanian CAEN 4618 Digital Retailer (1).pdf",
+        "history": [
+          {
+            "versionId": 1,
+            "date": "06.07.2025"
+          },
+          {
+            "versionId": 2,
+            "date": "02.08.2025"
+          }
+        ]
+      }
+    ]
   }
 }
