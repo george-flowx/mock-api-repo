@@ -30,7 +30,7 @@
         },
         "dateContact": {
             "telefon": "0712345678",
-            "fax": null,
+            "fax": "",
             "email": null
         },
         "actIdentitate": {
