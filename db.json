@@ -329,6 +329,48 @@
           "2024%": "NaN"
         }
       ]
+    },
+    {
+      "id": 3,
+      "declaratie": {
+        "dateGenerale": {
+          "dataNasterii": "1998-05-27T00:00:00.000Z",
+          "codNumericPersonal": "1560314384191",
+          "sex": "M",
+          "prenume": "IONEL",
+          "nume": "GEORGESCU",
+          "loculNasterii": "RAMNICU VALCEA",
+          "codTva": null,
+          "taraNasterii": "RO"
+        },
+        "domiciliuFiscal": {
+          "detaliiAdresa": null,
+          "scara": null,
+          "judet": "AB",
+          "tara": "RO",
+          "bloc": null,
+          "apartament": null,
+          "numar": "1",
+          "etaj": null,
+          "strada": "PRINCIPALA",
+          "localitate": "AB-Abrud",
+          "sector": null,
+          "codPostal": "123456",
+          "altaLocalitate": null
+        },
+        "dateContact": {
+          "telefon": "0712345678",
+          "fax": null,
+          "email": null
+        },
+        "actIdentitate": {
+          "dataEmiterii": "2025-09-01T00:00:00.000Z",
+          "numar": "MB1234567",
+          "serie": null,
+          "emisDe": "SPECLEP VALCEA",
+          "tip": "CEI"
+        }
+      }
     }
   ]
 }
