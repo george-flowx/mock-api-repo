@@ -2,44 +2,23 @@
   "posts": [
     {
       "id": 1,
-      "declaratie": {
-        "dateGenerale": {
-          "dataNasterii": "1998-05-27T00:00:00.000Z",
-          "codNumericPersonal": "1560314384191",
-          "sex": "M",
-          "prenume": "IONEL",
-          "nume": "GEORGESCU",
-          "loculNasterii": "RAMNICU VALCEA",
-          "codTva": null,
-          "taraNasterii": "RO"
-        },
-        "domiciliuFiscal": {
-          "detaliiAdresa": null,
-          "scara": null,
-          "judet": "AB",
-          "tara": "RO",
-          "bloc": null,
-          "apartament": null,
-          "numar": "1",
-          "etaj": null,
-          "strada": "PRINCIPALA",
-          "localitate": "AB-Abrud",
-          "sector": null,
-          "codPostal": "123456",
-          "altaLocalitate": null
-        },
-        "dateContact": {
-          "telefon": "0712345678",
-          "fax": null,
-          "email": null
-        },
-        "actIdentitate": {
-          "dataEmiterii": "2025-09-01T00:00:00.000Z",
-          "numar": "MB1234567",
-          "serie": null,
-          "emisDe": "SPECLEP VALCEA",
-          "tip": "CEI"
-        }
+      "application": {
+        "memoryDocuments": [
+          {
+            "documentId": 1,
+            "documentName": "Market Intelligence Caen 4618",
+            "currentVersionId": 3,
+            "date": "05.09.2025",
+            "source": "FlowX",
+            "status": "Validated",
+            "file": "pdf",
+            "documentURL": "https://admin-86.demo.flowx.ai/api/media-library/files/d7e6a2e9-b98b-432b-a388-6663fa667c66/caen4618/1757563200031_Market Intelligence Report_ Romanian CAEN 4618 Digital Retailer (1).pdf",
+            "history": [
+              { "versionId": 1, "date": "06.07.2025" },
+              { "versionId": 2, "date": "02.08.2025" }
+            ]
+          }
+        ]
       }
     }
   ]
