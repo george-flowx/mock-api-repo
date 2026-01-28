@@ -2,45 +2,530 @@
   "posts": [
     {
       "id": 1,
-      "declaratie": {
-        "dateGenerale": {
-            "dataNasterii": "1998-05-27T00:00:00.000Z",
-            "codNumericPersonal": "1560314384191",
-            "sex": "M",
-            "prenume": "IONEL",
-            "nume": "GEORGESCU",
-            "loculNasterii": "RAMNICU VALCEA",
-            "codTva": null,
-            "taraNasterii": "RO"
-        },
-        "domiciliuFiscal": {
-            "detaliiAdresa": null,
-            "scara": null,
-            "judet": "AB",
-            "tara": "RO",
-            "bloc": null,
-            "apartament": null,
-            "numar": "1",
-            "etaj": null,
-            "strada": "PRINCIPALA",
-            "localitate": "AB-Abrud",
-            "sector": null,
-            "codPostal": "123456",
-            "altaLocalitate": null
-        },
-        "dateContact": {
-            "telefon": "0712345678",
-            "fax": "",
-            "email": null
-        },
-        "actIdentitate": {
-            "dataEmiterii": "2025-09-01T00:00:00.000Z",
-            "numar": "MB1234567",
-            "serie": null,
-            "emisDe": "SPECLEP VALCEA",
-            "tip": "CEI"
+      "metadata": {
+    "source": "CORE_BANKING_SYSTEM",
+    "extractionTimestamp": "2024-01-15T10:32:45Z",
+    "dataAsOfDate": "2023-12-31",
+    "version": "1.0",
+    "demo": true
+  },
+
+  "customerMasterData": {
+    "customerId": "CIF-2023-00847291",
+    "companyName": "TECHNO DISTRIBUTION SRL",
+    "tradeName": "TechnoDistro",
+    "legalForm": "SRL",
+    "registrationNumber": "J40/12847/2008",
+    "fiscalCode": "RO24851763",
+    "euid": "ROONRC.J40/12847/2008",
+    "dateOfIncorporation": "2008-05-15",
+    "mainActivity": {
+      "naceCode": "4651",
+      "naceDescription": "Wholesale of computers, computer peripheral equipment and software"
+    },
+    "secondaryActivities": [
+      {"naceCode": "4652", "naceDescription": "Wholesale of electronic and telecommunications equipment"},
+      {"naceCode": "6201", "naceDescription": "Computer programming activities"}
+    ],
+    "companySize": "MEDIUM",
+    "employeeCount": 47,
+    "registeredAddress": {
+      "street": "Strada Industriilor 124",
+      "city": "București",
+      "county": "Sector 3",
+      "postalCode": "030254",
+      "country": "RO"
+    },
+    "operationalAddress": {
+      "street": "Bulevardul Unirii 45, Et. 3",
+      "city": "București",
+      "county": "Sector 3",
+      "postalCode": "030167",
+      "country": "RO"
+    },
+    "contactInfo": {
+      "phone": "+40 21 345 6789",
+      "email": "office@technodistro.ro",
+      "website": "www.technodistro.ro"
+    }
+  },
+
+  "ownershipStructure": {
+    "shareholdersList": [
+      {
+        "shareholderId": "SH-001",
+        "name": "Popescu Ion Vasile",
+        "type": "INDIVIDUAL",
+        "cnp": "1720315400123",
+        "nationality": "RO",
+        "shareholdingPercent": 60.0,
+        "votingRightsPercent": 60.0,
+        "role": "ADMINISTRATOR",
+        "pep": false,
+        "sanctionsScreening": {
+          "status": "CLEAR",
+          "lastChecked": "2023-11-15"
+        }
+      },
+      {
+        "shareholderId": "SH-002",
+        "name": "Ionescu Maria Elena",
+        "type": "INDIVIDUAL",
+        "cnp": "2750823400456",
+        "nationality": "RO",
+        "shareholdingPercent": 40.0,
+        "votingRightsPercent": 40.0,
+        "role": "ASSOCIATE",
+        "pep": false,
+        "sanctionsScreening": {
+          "status": "CLEAR",
+          "lastChecked": "2023-11-15"
         }
       }
+    ],
+    "ultimateBeneficialOwners": [
+      {
+        "name": "Popescu Ion Vasile",
+        "ownershipPercent": 60.0,
+        "controlType": "DIRECT"
+      },
+      {
+        "name": "Ionescu Maria Elena",
+        "ownershipPercent": 40.0,
+        "controlType": "DIRECT"
+      }
+    ],
+    "groupAffiliations": []
+  },
+
+  "bankingRelationship": {
+    "relationshipStartDate": "2010-03-22",
+    "relationshipDurationYears": 13.8,
+    "primaryBankStatus": true,
+    "relationshipManager": {
+      "name": "Constantinescu Adrian",
+      "employeeId": "RM-2847",
+      "branch": "București Corporate Center",
+      "contactEmail": "adrian.constantinescu@bank.ro"
+    },
+    "segment": "SME_CORPORATE",
+    "clientRating": {
+      "internalRating": "B+",
+      "ratingDate": "2023-09-30",
+      "probabilityOfDefault": 2.15,
+      "ratingTrend": "STABLE"
+    },
+    "kycStatus": {
+      "lastKycReview": "2023-06-15",
+      "nextKycDue": "2024-06-15",
+      "riskClassification": "STANDARD",
+      "enhancedDueDiligence": false
+    }
+  },
+
+  "accountsOverview": {
+    "currentAccounts": [
+      {
+        "accountId": "RO49BANK0000000012345678",
+        "iban": "RO49BANK0000000012345678",
+        "currency": "RON",
+        "accountType": "CURRENT",
+        "status": "ACTIVE",
+        "openDate": "2010-03-22",
+        "currentBalance": 2035712.33,
+        "availableBalance": 1985712.33,
+        "averageBalance3M": 1847293.50,
+        "averageBalance12M": 1623847.25,
+        "monthlyCredits": {
+          "count": 245,
+          "totalAmount": 8456723.50
+        },
+        "monthlyDebits": {
+          "count": 312,
+          "totalAmount": 8234891.20
+        }
+      },
+      {
+        "accountId": "RO62BANK0000000087654321",
+        "iban": "RO62BANK0000000087654321",
+        "currency": "EUR",
+        "accountType": "CURRENT",
+        "status": "ACTIVE",
+        "openDate": "2012-08-15",
+        "currentBalance": 45892.60,
+        "availableBalance": 45892.60,
+        "averageBalance3M": 52340.80,
+        "averageBalance12M": 48756.30
+      }
+    ],
+    "totalRelationshipValue": {
+      "depositsRON": 2035712.33,
+      "depositsEUR": 45892.60,
+      "totalDepositsEquivalentRON": 2264547.78
+    }
+  },
+
+  "existingFacilities": {
+    "totalExposure": {
+      "drawn": 6918029.50,
+      "undrawn": 1581970.50,
+      "total": 8500000.00
+    },
+    "facilities": [
+      {
+        "facilityId": "FAC-2021-00234",
+        "facilityType": "REVOLVING_CREDIT_LINE",
+        "purpose": "WORKING_CAPITAL",
+        "originalAmount": 5000000.00,
+        "currency": "RON",
+        "currentOutstanding": 4418029.50,
+        "availableAmount": 581970.50,
+        "interestRate": {
+          "type": "FLOATING",
+          "baseRate": "ROBOR_3M",
+          "spread": 3.50,
+          "effectiveRate": 9.42
+        },
+        "startDate": "2021-04-15",
+        "maturityDate": "2024-04-14",
+        "status": "ACTIVE",
+        "collateral": [
+          {
+            "collateralId": "COL-001",
+            "type": "INVENTORY_PLEDGE",
+            "description": "General pledge on inventory (marfuri)",
+            "valuationAmount": 11884640.41,
+            "valuationDate": "2023-12-31",
+            "ltv": 37.18
+          }
+        ],
+        "covenants": [
+          {
+            "type": "DEBT_TO_EQUITY",
+            "threshold": "<=3.0",
+            "currentValue": 0.26,
+            "status": "COMPLIANT"
+          },
+          {
+            "type": "CURRENT_RATIO",
+            "threshold": ">=1.2",
+            "currentValue": 1.58,
+            "status": "COMPLIANT"
+          }
+        ],
+        "paymentBehavior": {
+          "daysOverdueMax12M": 0,
+          "daysOverdueCurrent": 0,
+          "paymentRating": "A"
+        }
+      },
+      {
+        "facilityId": "FAC-2022-00891",
+        "facilityType": "TERM_LOAN",
+        "purpose": "EQUIPMENT_FINANCING",
+        "originalAmount": 3500000.00,
+        "currency": "RON",
+        "currentOutstanding": 2500000.00,
+        "monthlyInstallment": 97222.22,
+        "interestRate": {
+          "type": "FIXED",
+          "rate": 8.75
+        },
+        "startDate": "2022-09-01",
+        "maturityDate": "2025-08-31",
+        "remainingTerm": 20,
+        "status": "ACTIVE",
+        "collateral": [
+          {
+            "collateralId": "COL-002",
+            "type": "EQUIPMENT",
+            "description": "IT Equipment and vehicles",
+            "valuationAmount": 809354.74,
+            "valuationDate": "2023-12-31",
+            "ltv": 308.86
+          },
+          {
+            "collateralId": "COL-003",
+            "type": "PERSONAL_GUARANTEE",
+            "description": "Joint guarantee from shareholders",
+            "guarantors": ["Popescu Ion Vasile", "Ionescu Maria Elena"],
+            "guaranteeAmount": 3500000.00
+          }
+        ],
+        "covenants": [
+          {
+            "type": "DSCR",
+            "threshold": ">=1.25",
+            "currentValue": 2.34,
+            "status": "COMPLIANT"
+          }
+        ],
+        "paymentBehavior": {
+          "daysOverdueMax12M": 3,
+          "daysOverdueCurrent": 0,
+          "paymentRating": "A",
+          "installmentsPaid": 16,
+          "installmentsRemaining": 20
+        }
+      }
+    ]
+  },
+
+  "transactionBehavior": {
+    "analysisperiod": "2023-01-01 to 2023-12-31",
+    "summary": {
+      "totalCredits": 98456892.45,
+      "totalDebits": 97234567.12,
+      "netCashFlow": 1222325.33,
+      "avgMonthlyTurnover": 8204741.04
+    },
+    "creditAnalysis": {
+      "domesticCollections": {
+        "count": 2847,
+        "amount": 82456123.50
+      },
+      "internationalCollections": {
+        "count": 234,
+        "amount": 12456892.30,
+        "mainCountries": ["DE", "IT", "HU"]
+      },
+      "otherCredits": {
+        "count": 156,
+        "amount": 3543876.65
+      }
+    },
+    "debitAnalysis": {
+      "supplierPayments": {
+        "count": 3124,
+        "amount": 78234567.80
+      },
+      "salaries": {
+        "monthlyAverage": 425000.00,
+        "employees": 47
+      },
+      "taxes": {
+        "amount": 4567890.32
+      },
+      "loanRepayments": {
+        "amount": 1166666.64
+      },
+      "otherDebits": {
+        "amount": 12840442.36
+      }
+    },
+    "seasonality": {
+      "peakMonths": ["March", "September", "November"],
+      "lowMonths": ["January", "July", "August"],
+      "seasonalityIndex": 1.35
+    },
+    "returnedPayments": {
+      "count": 0,
+      "amount": 0
+    }
+  },
+
+  "creditBureauData": {
+    "bureauName": "BIROUL_DE_CREDIT",
+    "queryDate": "2024-01-10",
+    "companyScore": {
+      "score": 724,
+      "scoreRange": "300-850",
+      "riskCategory": "LOW_RISK",
+      "scoreTrend": "STABLE"
+    },
+    "paymentHistory": {
+      "onTimePaymentsPercent": 98.5,
+      "late30DaysCount": 2,
+      "late60DaysCount": 0,
+      "late90PlusCount": 0
+    },
+    "totalSystemExposure": {
+      "numberOfBanks": 2,
+      "totalExposure": 12500000.00,
+      "exposureWithThisBank": 8500000.00,
+      "exposureShare": 68.0
+    },
+    "recentInquiries": [
+      {
+        "date": "2023-11-20",
+        "institution": "BANK_XYZ",
+        "purpose": "CREDIT_APPLICATION"
+      }
+    ],
+    "publicRecords": {
+      "bankruptcyFilings": 0,
+      "taxLiens": 0,
+      "judgments": 0
+    }
+  },
+
+  "collateralPortfolio": {
+    "totalCollateralValue": 30461162.89,
+    "collateralCoverage": 358.0,
+    "items": [
+      {
+        "collateralId": "COL-REAL-001",
+        "type": "LAND",
+        "description": "Industrial land - Strada Industriilor 124",
+        "location": "București, Sector 3",
+        "area": 4500,
+        "areaUnit": "sqm",
+        "bookValue": 9951267.00,
+        "marketValue": 12500000.00,
+        "valuationDate": "2023-03-15",
+        "valuationType": "EXTERNAL_APPRAISAL",
+        "pledgeStatus": "UNPLEDGED",
+        "encumbrances": []
+      },
+      {
+        "collateralId": "COL-REAL-002",
+        "type": "BUILDING",
+        "description": "Warehouse and office building",
+        "location": "București, Sector 3",
+        "area": 2800,
+        "areaUnit": "sqm",
+        "bookValue": 7217954.93,
+        "marketValue": 8500000.00,
+        "valuationDate": "2023-03-15",
+        "valuationType": "EXTERNAL_APPRAISAL",
+        "pledgeStatus": "UNPLEDGED",
+        "encumbrances": []
+      },
+      {
+        "collateralId": "COL-INV-001",
+        "type": "INVENTORY",
+        "description": "IT equipment and merchandise inventory",
+        "bookValue": 11884640.41,
+        "marketValue": 9507712.33,
+        "discountRate": 20.0,
+        "valuationDate": "2023-12-31",
+        "pledgeStatus": "PLEDGED",
+        "pledgedTo": "FAC-2021-00234"
+      },
+      {
+        "collateralId": "COL-REC-001",
+        "type": "RECEIVABLES",
+        "description": "Trade receivables",
+        "bookValue": 30550078.74,
+        "eligibleValue": 24440062.99,
+        "discountRate": 20.0,
+        "agingProfile": {
+          "current": 22412557.65,
+          "days30": 5489234.12,
+          "days60": 1847234.56,
+          "days90Plus": 801052.41
+        },
+        "concentrationRisk": {
+          "top5CustomersShare": 42.5,
+          "largestCustomer": 12.3
+        },
+        "pledgeStatus": "UNPLEDGED"
+      }
+    ]
+  },
+
+  "financialSummaryFromCBS": {
+    "asOfDate": "2023-12-31",
+    "balanceSheet": {
+      "totalAssets": 64438365.03,
+      "currentAssets": {
+        "cash": 2139864.62,
+        "receivables": 31152913.65,
+        "inventory": 12758434.16
+      },
+      "fixedAssets": {
+        "tangible": 15536484.79,
+        "intangible": 64788.56,
+        "financial": 58510.93
+      },
+      "totalLiabilities": 31487290.77,
+      "currentLiabilities": {
+        "shortTermDebt": 6918029.50,
+        "tradePayables": 17520862.20,
+        "otherCurrentLiabilities": 567104.17
+      },
+      "equity": 32951074.26,
+      "shareholdersFunds": 32951074.26
+    },
+    "incomeStatement": {
+      "period": "2023",
+      "revenue": 131108284.37,
+      "costOfGoodsSold": 102456789.00,
+      "grossProfit": 28651495.37,
+      "operatingExpenses": 27234567.00,
+      "ebitda": 2874456.37,
+      "depreciation": 508045.28,
+      "ebit": 2366411.09,
+      "interestExpense": 1298765.45,
+      "profitBeforeTax": 1067645.64,
+      "incomeTax": 227832.64,
+      "netProfit": 839813.00
+    },
+    "keyRatios": {
+      "liquidity": {
+        "currentRatio": 1.58,
+        "quickRatio": 1.15,
+        "cashRatio": 0.09
+      },
+      "leverage": {
+        "debtToEquity": 0.26,
+        "debtToAssets": 0.11,
+        "interestCoverage": 1.82
+      },
+      "profitability": {
+        "grossMargin": 21.86,
+        "operatingMargin": 1.80,
+        "netMargin": 0.64,
+        "roe": 2.55,
+        "roa": 1.30
+      },
+      "efficiency": {
+        "assetTurnover": 2.03,
+        "receivablesDays": 87,
+        "payablesDays": 62,
+        "inventoryDays": 45,
+        "cashConversionCycle": 70
+      }
+    }
+  },
+
+  "loanApplicationContext": {
+    "requestedFacility": {
+      "type": "TERM_LOAN",
+      "purpose": "EXPANSION",
+      "requestedAmount": 5000000.00,
+      "currency": "RON",
+      "requestedTenor": 60,
+      "repaymentType": "EQUAL_INSTALLMENTS"
+    },
+    "purposeDescription": "Expansion of warehouse capacity and working capital for new distribution contracts",
+    "sourceOfRepayment": "Operating cash flows from increased sales",
+    "proposedCollateral": [
+      "Existing real estate (land + building) - currently unpledged",
+      "Assignment of future receivables"
+    ],
+    "projectedImpact": {
+      "revenueGrowth": 25.0,
+      "additionalEmployees": 12,
+      "newMarkets": ["Moldova", "Bulgaria"]
+    }
+  },
+
+  "riskFlags": {
+    "amlFlags": [],
+    "watchlistStatus": "CLEAR",
+    "adverseMedia": [],
+    "industryRisk": "MODERATE",
+    "countryRisk": "LOW",
+    "concentrationRisk": {
+      "singleCustomerExposure": 12.3,
+      "singleSupplierDependency": 18.5,
+      "status": "ACCEPTABLE"
+    },
+    "environmentalRisk": "LOW",
+    "socialRisk": "LOW",
+    "governanceRisk": "LOW"
+  }
     }
   ]
 }
