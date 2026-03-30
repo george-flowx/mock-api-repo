@@ -2,274 +2,56 @@
   "posts": [
     {
       "id": 1,
-      "type": "customerMasterData",
+      "type": "customerData",
       "data": {
-        "customerId": "CIF-2023-00847291",
-        "companyName": "TECHNO DISTRIBUTION SRL",
-        "tradeName": "TechnoDistro",
-        "legalForm": "SRL",
-        "registrationNumber": "J40/12847/2008",
-        "fiscalCode": "RO24851763",
-        "euid": "ROONRC.J40/12847/2008",
-        "dateOfIncorporation": "2008-05-15",
-        "mainActivity": {
-          "naceCode": "4651",
-          "naceDescription": "Wholesale of computers, computer peripheral equipment and software"
+        "status": "SUCCESS",
+        "requestId": "REQ-2026-04-15-08421",
+        "timestamp": "2026-04-15T10:30:12Z",
+        "customer": {
+          "customerId": "ERSTE-HU-884721",
+          "firstName": "Kovács",
+          "lastName": "István",
+          "personalIdNumber": "1-850315-0142",
+          "dateOfBirth": "1985-03-15",
+          "taxId": "8453921674",
+          "tajNumber": "072415683",
+          "address": "1113 Budapest, Bartók Béla út 48. 3/12",
+          "customerSegment": "RETAIL",
+          "customerSince": "2019-02-10",
+          "kycStatus": "VALID",
+          "kycExpiryDate": "2027-01-15"
         },
-        "secondaryActivities": [
-          {
-            "naceCode": "4652",
-            "naceDescription": "Wholesale of electronic and telecommunications equipment"
-          },
-          {
-            "naceCode": "6201",
-            "naceDescription": "Computer programming activities"
-          }
-        ],
-        "companySize": "MEDIUM",
-        "employeeCount": 47,
-        "registeredAddress": {
-          "street": "Strada Industriilor 124",
-          "city": "București",
-          "county": "Sector 3",
-          "postalCode": "030254",
-          "country": "RO"
+        "account": {
+          "accountNumber": "11740099-22018765",
+          "accountType": "CURRENT",
+          "currency": "HUF",
+          "accountStatus": "ACTIVE",
+          "openedDate": "2019-02-10"
         },
-        "operationalAddress": {
-          "street": "Bulevardul Unirii 45, Et. 3",
-          "city": "București",
-          "county": "Sector 3",
-          "postalCode": "030167",
-          "country": "RO"
+        "salaryData": {
+          "employerName": "Budapest Solutions Kft.",
+          "avgMonthlySalary": 785000,
+          "currency": "HUF",
+          "salaryMonthsOnRecord": 18,
+          "lastSalaryDate": "2026-03-10",
+          "lastSalaryAmount": 803000,
+          "salaryHistory": [
+            { "month": "2026-03", "amount": 803000 },
+            { "month": "2026-02", "amount": 762000 },
+            { "month": "2026-01", "amount": 781000 },
+            { "month": "2025-12", "amount": 820000 },
+            { "month": "2025-11", "amount": 775000 },
+            { "month": "2025-10", "amount": 769000 }
+          ]
         },
-        "contactInfo": {
-          "phone": "+40 21 345 6789",
-          "email": "office@technodistro.ro",
-          "website": "www.technodistro.ro"
+        "existingObligations": {
+          "hasActiveLoan": false,
+          "hasCreditCard": true,
+          "creditCardLimit": 500000,
+          "creditCardBalance": 127400,
+          "monthlyDebtService": 0,
+          "garnishments": false
         }
-      }
-    },
-    {
-      "id": 2,
-      "type": "ownershipStructure",
-      "data": {
-        "shareholdersList": [
-          {
-            "shareholderId": "SH-001",
-            "name": "Popescu Ion Vasile",
-            "type": "INDIVIDUAL",
-            "cnp": "1720315400123",
-            "nationality": "RO",
-            "shareholdingPercent": 60.0,
-            "votingRightsPercent": 60.0,
-            "role": "ADMINISTRATOR",
-            "pep": false,
-            "sanctionsScreening": {
-              "status": "CLEAR",
-              "lastChecked": "2023-11-15"
-            }
-          },
-          {
-            "shareholderId": "SH-002",
-            "name": "Ionescu Maria Elena",
-            "type": "INDIVIDUAL",
-            "cnp": "2750823400456",
-            "nationality": "RO",
-            "shareholdingPercent": 40.0,
-            "votingRightsPercent": 40.0,
-            "role": "ASSOCIATE",
-            "pep": false,
-            "sanctionsScreening": {
-              "status": "CLEAR",
-              "lastChecked": "2023-11-15"
-            }
-          }
-        ],
-        "ultimateBeneficialOwners": [
-          {
-            "name": "Popescu Ion Vasile",
-            "ownershipPercent": 60.0,
-            "controlType": "DIRECT"
-          },
-          {
-            "name": "Ionescu Maria Elena",
-            "ownershipPercent": 40.0,
-            "controlType": "DIRECT"
-          }
-        ],
-        "groupAffiliations": []
-      }
-    },
-    {
-      "id": 3,
-      "type": "bankingRelationship",
-      "data": {
-        "relationshipStartDate": "2010-03-22",
-        "relationshipDurationYears": 13.8,
-        "primaryBankStatus": true,
-        "relationshipManager": {
-          "name": "Constantinescu Adrian",
-          "employeeId": "RM-2847",
-          "branch": "București Corporate Center",
-          "contactEmail": "adrian.constantinescu@bank.ro"
-        },
-        "segment": "SME_CORPORATE",
-        "clientRating": {
-          "internalRating": "B+",
-          "ratingDate": "2023-09-30",
-          "probabilityOfDefault": 2.15,
-          "ratingTrend": "STABLE"
-        },
-        "kycStatus": {
-          "lastKycReview": "2023-06-15",
-          "nextKycDue": "2024-06-15",
-          "riskClassification": "STANDARD",
-          "enhancedDueDiligence": false
-        }
-      }
-    },
-    {
-      "id": 4,
-      "type": "accountsOverview",
-      "data": {
-        "currentAccounts": [
-          {
-            "accountId": "RO49BANK0000000012345678",
-            "iban": "RO49BANK0000000012345678",
-            "currency": "RON",
-            "accountType": "CURRENT",
-            "status": "ACTIVE",
-            "openDate": "2010-03-22",
-            "currentBalance": 2035712.33,
-            "availableBalance": 1985712.33,
-            "averageBalance3M": 1847293.5,
-            "averageBalance12M": 1623847.25,
-            "monthlyCredits": {
-              "count": 245,
-              "totalAmount": 8456723.5
-            },
-            "monthlyDebits": {
-              "count": 312,
-              "totalAmount": 8234891.2
-            }
-          },
-          {
-            "accountId": "RO62BANK0000000087654321",
-            "iban": "RO62BANK0000000087654321",
-            "currency": "EUR",
-            "accountType": "CURRENT",
-            "status": "ACTIVE",
-            "openDate": "2012-08-15",
-            "currentBalance": 45892.6,
-            "availableBalance": 45892.6,
-            "averageBalance3M": 52340.8,
-            "averageBalance12M": 48756.3
-          }
-        ],
-        "totalRelationshipValue": {
-          "depositsRON": 2035712.33,
-          "depositsEUR": 45892.6,
-          "totalDepositsEquivalentRON": 2264547.78
-        }
-      }
-    },
-    {
-      "id": 5,
-      "type": "existingFacilities",
-      "data": {
-        "totalExposure": {
-          "drawn": 6918029.5,
-          "undrawn": 1581970.5,
-          "total": 8500000.0
-        },
-        "facilities": [
-          {
-            "facilityId": "FAC-2021-00234",
-            "facilityType": "REVOLVING_CREDIT_LINE",
-            "purpose": "WORKING_CAPITAL",
-            "originalAmount": 5000000.0,
-            "currency": "RON",
-            "currentOutstanding": 4418029.5,
-            "availableAmount": 581970.5,
-            "interestRate": {
-              "type": "FLOATING",
-              "baseRate": "ROBOR_3M",
-              "spread": 3.5,
-              "effectiveRate": 9.42
-            },
-            "startDate": "2021-04-15",
-            "maturityDate": "2024-04-14",
-            "status": "ACTIVE"
-          },
-          {
-            "facilityId": "FAC-2022-00891",
-            "facilityType": "TERM_LOAN",
-            "purpose": "EQUIPMENT_FINANCING",
-            "originalAmount": 3500000.0,
-            "currency": "RON",
-            "currentOutstanding": 2500000.0,
-            "monthlyInstallment": 97222.22,
-            "interestRate": {
-              "type": "FIXED",
-              "rate": 8.75
-            },
-            "startDate": "2022-09-01",
-            "maturityDate": "2025-08-31",
-            "status": "ACTIVE"
-          }
-        ]
-      }
-    },
-    {
-      "id": 6,
-      "type": "transactionBehavior",
-      "data": {
-        "analysisperiod": "2023-01-01 to 2023-12-31",
-        "summary": {
-          "totalCredits": 98456892.45,
-          "totalDebits": 97234567.12,
-          "netCashFlow": 1222325.33,
-          "avgMonthlyTurnover": 8204741.04
-        },
-        "seasonality": {
-          "peakMonths": ["March", "September", "November"],
-          "lowMonths": ["January", "July", "August"],
-          "seasonalityIndex": 1.35
-        }
-      }
-    },
-    {
-      "id": 7,
-      "type": "creditBureauData",
-      "data": {
-        "bureauName": "BIROUL_DE_CREDIT",
-        "queryDate": "2024-01-10",
-        "companyScore": {
-          "score": 724,
-          "scoreRange": "300-850",
-          "riskCategory": "LOW_RISK",
-          "scoreTrend": "STABLE"
-        },
-        "paymentHistory": {
-          "onTimePaymentsPercent": 98.5,
-          "late30DaysCount": 2,
-          "late60DaysCount": 0,
-          "late90PlusCount": 0
-        }
-      }
-    },
-    {
-      "id": 8,
-      "type": "riskFlags",
-      "data": {
-        "amlFlags": [],
-        "watchlistStatus": "CLEAR",
-        "adverseMedia": [],
-        "industryRisk": "MODERATE",
-        "countryRisk": "LOW",
-        "environmentalRisk": "LOW",
-        "socialRisk": "LOW",
-        "governanceRisk": "LOW"
       }
     }
   ]
