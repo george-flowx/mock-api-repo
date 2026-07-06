@@ -1,58 +1,95 @@
 {
   "posts": [
     {
-      "id": 1,
-      "type": "customerData",
-      "data": {
-        "status": "SUCCESS",
-        "requestId": "REQ-2026-04-15-08421",
-        "timestamp": "2026-04-15T10:30:12Z",
-        "customer": {
-          "customerId": "ERSTE-HU-884721",
-          "firstName": "Kovács",
-          "lastName": "István",
-          "personalIdNumber": "1-850315-0142",
-          "dateOfBirth": "1985-03-15",
-          "taxId": "8453921674",
-          "tajNumber": "072415683",
-          "address": "1113 Budapest, Bartók Béla út 48. 3/12",
-          "customerSegment": "RETAIL",
-          "customerSince": "2019-02-10",
-          "kycStatus": "VALID",
-          "kycExpiryDate": "2027-01-15"
-        },
-        "account": {
-          "accountNumber": "11740099-22018765",
-          "accountType": "CURRENT",
-          "currency": "HUF",
-          "accountStatus": "ACTIVE",
-          "openedDate": "2019-02-10"
-        },
-        "salaryData": {
-          "employerName": "Budapest Solutions Kft.",
-          "avgMonthlySalary": 785000,
-          "currency": "HUF",
-          "salaryMonthsOnRecord": 18,
-          "lastSalaryDate": "2026-03-10",
-          "lastSalaryAmount": 803000,
-          "salaryHistory": [
-            { "month": "2026-03", "amount": 803000 },
-            { "month": "2026-02", "amount": 762000 },
-            { "month": "2026-01", "amount": 781000 },
-            { "month": "2025-12", "amount": 820000 },
-            { "month": "2025-11", "amount": 775000 },
-            { "month": "2025-10", "amount": 769000 }
-          ]
-        },
-        "existingObligations": {
-          "hasActiveLoan": false,
-          "hasCreditCard": true,
-          "creditCardLimit": 500000,
-          "creditCardBalance": 127400,
-          "monthlyDebtService": 0,
-          "garnishments": false
-        }
-      }
+      "id": "1",
+      "customerRef": "CUST-0042871",
+      "personType": "INDIVIDUAL",
+      "status": "ACTIVE",
+      "nationalId": "1850312446721",
+      "firstName": "Andrei",
+      "lastName": "Popescu",
+      "birthDate": "1985-03-12",
+      "email": "andrei.popescu@email.ro",
+      "phone": "+40722123456",
+      "bonusMalusClass": "B3",
+      "claimsFreeYears": 2,
+      "customerSegment": "STANDARD",
+      "blacklisted": false,
+      "fraudRiskScore": "LOW",
+      "hasOpenClaims": false,
+      "customerSince": "2019-04-11"
+    },
+    {
+      "id": "2",
+      "customerRef": "CUST-0091334",
+      "personType": "INDIVIDUAL",
+      "status": "ACTIVE",
+      "nationalId": "2900715123456",
+      "firstName": "Maria",
+      "lastName": "Ionescu",
+      "birthDate": "1990-07-15",
+      "email": "maria.ionescu@email.ro",
+      "phone": "+40733987654",
+      "bonusMalusClass": "B0",
+      "claimsFreeYears": 0,
+      "customerSegment": "NEW",
+      "blacklisted": false,
+      "fraudRiskScore": "LOW",
+      "hasOpenClaims": false,
+      "customerSince": "2026-06-01"
     }
-  ]
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "postId": "1",
+      "recordType": "POLICY",
+      "policyNumber": "RCA-2025-778120",
+      "productType": "RCA",
+      "status": "ACTIVE",
+      "startDate": "2025-08-15",
+      "endDate": "2026-08-14",
+      "renewalDue": true,
+      "annualPremium": 1180.00,
+      "currency": "RON",
+      "paymentStatus": "PAID",
+      "vin": "WVWZZZ1KZAW000123",
+      "registrationNumber": "B123ABC"
+    },
+    {
+      "id": "2",
+      "postId": "1",
+      "recordType": "POLICY",
+      "policyNumber": "CASCO-2026-330441",
+      "productType": "CASCO",
+      "status": "ACTIVE",
+      "startDate": "2026-03-01",
+      "endDate": "2027-02-28",
+      "renewalDue": false,
+      "annualPremium": 3450.00,
+      "currency": "RON",
+      "paymentStatus": "PAID",
+      "vin": "WVWZZZ1KZAW000123",
+      "registrationNumber": "B123ABC"
+    },
+    {
+      "id": "3",
+      "postId": "1",
+      "recordType": "CLAIM",
+      "claimNumber": "DAU-2023-114290",
+      "relatedPolicy": "RCA-2022-661015",
+      "productType": "RCA",
+      "role": "AT_FAULT",
+      "eventDate": "2023-11-20",
+      "status": "SETTLED",
+      "settledDate": "2024-02-10",
+      "paidAmount": 8750.00,
+      "currency": "RON",
+      "description": "Coliziune în intersecție, avarii bară față și far dreapta"
+    }
+  ],
+  "profile": {
+    "name": "POLISY-CORE",
+    "sourceSystems": ["POLICY_ADMIN", "CLAIMS", "CRM"]
+  }
 }
